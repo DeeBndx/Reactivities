@@ -1225,44 +1225,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Danny\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Danny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Persistence\\Persistence.csproj"
+            "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Persistence\\Persistence.csproj"
             }
           }
         }
