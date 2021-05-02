@@ -8,24 +8,33 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Danny\\.nuget\\packages\\": {}
+    "C:\\Users\\Danny\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danny\\Desktop\\Skole\\Reactivities\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Danny\\Desktop\\SCHOOL\\Reactivities\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
