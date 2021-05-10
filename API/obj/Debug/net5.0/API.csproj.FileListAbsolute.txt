@@ -132,3 +132,6 @@ C:\Users\Danny\Desktop\Skole\Reactivities\API\obj\Debug\net5.0\API.dll
 C:\Users\Danny\Desktop\Skole\Reactivities\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\Danny\Desktop\Skole\Reactivities\API\obj\Debug\net5.0\API.pdb
 C:\Users\Danny\Desktop\Skole\Reactivities\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\Danny\Desktop\Skole\Reactivities\API\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Danny\Desktop\Skole\Reactivities\API\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\Danny\Desktop\Skole\Reactivities\API\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
