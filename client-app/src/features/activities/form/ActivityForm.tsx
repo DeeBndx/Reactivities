@@ -68,7 +68,12 @@ const ActivityForm = () => {
   return (
     <Segment clearing>
       <Header content="Activity Details" sub color="teal" />
-      <Formik validationSchema={validationSchema} enableReinitialize initialValues={Activity} onSubmit={values => handleFormSubmit(values)} >
+      <Formik 
+        validationSchema={validationSchema} 
+        enableReinitialize 
+        initialValues={Activity} 
+        onSubmit={values => handleFormSubmit(values)}
+      >
         {({ handleSubmit, isValid, isSubmitting, dirty }) => (
           <Form className="ui form" onSubmit={handleSubmit} autoComplete="off" >
             <MyTextInput name="title" placeholder="Title" />

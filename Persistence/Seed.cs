@@ -3,18 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Domain;
+using Microsoft.AspNetCore.Identity;
 
 namespace Persistence
 {
     public class Seed
     {
-        public static async Task SeedData(DataContext context)
+        public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
         {
-            if (context.Activities.Any()) return;
+
+          if(!userManager.Users.Any()){
+            var users = new List<AppUser> {
+              new AppUser {DisplayName = "Bob", UserName = "bob", Email = "bob@test.com"},
+              new AppUser {DisplayName = "Tom", UserName = "tom", Email = "tom@test.com"},
+              new AppUser {DisplayName = "Jane", UserName = "jane", Email = "jane@test.com"},
+            };
             
-            var activities = new List<Activity>
-            {
-                new Activity
+            foreach (var user in users) {
+              await userManager.CreateAsync(user, "Pa$$w0rd");
+            };
+          }
+
+          
+          if (context.Activities.Any()) return;
+          
+          var activities = new List<Activity>
+          {
+              new Activity
                 {
                     Title = "Past Activity 1",
                     Date = DateTime.Now.AddMonths(-2),
@@ -23,7 +38,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Pub",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Past Activity 2",
                     Date = DateTime.Now.AddMonths(-1),
@@ -32,7 +47,7 @@ namespace Persistence
                     City = "Paris",
                     Venue = "Louvre",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 1",
                     Date = DateTime.Now.AddMonths(1),
@@ -41,7 +56,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Natural History Museum",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 2",
                     Date = DateTime.Now.AddMonths(2),
@@ -50,7 +65,7 @@ namespace Persistence
                     City = "London",
                     Venue = "O2 Arena",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 3",
                     Date = DateTime.Now.AddMonths(3),
@@ -59,7 +74,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Another pub",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 4",
                     Date = DateTime.Now.AddMonths(4),
@@ -68,7 +83,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Yet another pub",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 5",
                     Date = DateTime.Now.AddMonths(5),
@@ -77,7 +92,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Just another pub",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 6",
                     Date = DateTime.Now.AddMonths(6),
@@ -86,7 +101,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Roundhouse Camden",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 7",
                     Date = DateTime.Now.AddMonths(7),
@@ -95,7 +110,7 @@ namespace Persistence
                     City = "London",
                     Venue = "Somewhere on the Thames",
                 },
-                new Activity
+              new Activity
                 {
                     Title = "Future Activity 8",
                     Date = DateTime.Now.AddMonths(8),
@@ -104,10 +119,10 @@ namespace Persistence
                     City = "London",
                     Venue = "Cinema",
                 }
-            };
+          };
 
-            await context.Activities.AddRangeAsync(activities);
-            await context.SaveChangesAsync();
+          await context.Activities.AddRangeAsync(activities);
+          await context.SaveChangesAsync();
         }
     }
 }
